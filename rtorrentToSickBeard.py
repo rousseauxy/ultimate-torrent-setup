@@ -11,5 +11,5 @@ filePath = "".join(sys.argv[1].replace("/download/", "/complete/").rpartition("/
 fileName = sys.argv[2]
 fileLabel = urllib.unquote_plus(sys.argv[3])
 
-if fileLabel == "tv/sickbeard":
+if fileLabel == "series":
 	autoProcessTV.processEpisode(filePath, fileName)
